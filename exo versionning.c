@@ -16,7 +16,7 @@ int main(){
             cpt++;
         }
     }
-    moy=somme/cpt;
+
 
 
 return 0 ;
