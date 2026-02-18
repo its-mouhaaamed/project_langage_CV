@@ -1,7 +1,6 @@
 #include<stdio.h>
 int main(){
-    int x,n,somme=0,cpt=0;
-    float moy;
+    int x,n,somme=0,cpt=0,somme1=0;    float moy;
     do{
     printf("saisir n entiers:");
     scanf("%d",&n);
@@ -14,9 +13,16 @@ int main(){
         if(x%2==0){
             somme=somme+x;
             cpt++;
+        }else{
+            somme1=somme1+x;
         }
     }
-    moy=somme/cpt;
+    moy=(float) somme/cpt;
+    moy=(float) somme1/cpt;
+    printf("le moyenne est %.2f",moy);
+    printf("le nombre de nombre impaire %d",n-cpt);
+    printf("le nombre de nombres impaires est:%f",moy);
+
 
 
 return 0 ;
